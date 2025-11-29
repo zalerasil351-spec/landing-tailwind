@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сайт из 5 секций</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Навигация -->
+  <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-semibold">MySite</h1>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#hero" class="hover:text-blue-600">Главная</a></li>
+        <li><a href="#about" class="hover:text-blue-600">О нас</a></li>
+        <li><a href="#features" class="hover:text-blue-600">Особенности</a></li>
+        <li><a href="#gallery" class="hover:text-blue-600">Галерея</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 1. Hero -->
+  <section id="hero" class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+    <div class="text-center">
+      <h2 class="text-5xl font-bold mb-4">Добро пожаловать!</h2>
+      <p class="text-xl mb-6">Современный сайт на HTML5 + TailwindCSS</p>
+      <button id="ctaButton" class="px-6 py-3 bg-white text-blue-600 rounded shadow hover:bg-gray-200 transition">
+        Нажми меня
+      </button>
+    </div>
+  </section>
+
+  <!-- 2. About -->
+  <section id="about" class="py-20 container mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10">О нас</h2>
+    <p class="max-w-3xl mx-auto text-center text-lg">
+      Это демонстрационный сайт, созданный с использованием современных технологий веб-разработки.
+    </p>
+  </section>
+
+  <!-- 3. Features -->
+  <section id="features" class="py-20 bg-gray-200">
+    <h2 class="text-3xl font-bold text-center mb-10">Что мы предлагаем</h2>
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-6 bg-white rounded-lg shadow text-center">
+        <h3 class="text-xl font-semibold mb-2">Быстрота</h3>
+        <p>Оптимизированный и лёгкий код.</p>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow text-center">
+        <h3 class="text-xl font-semibold mb-2">Гибкость</h3>
+        <p>Tailwind даёт сильную адаптивность.</p>
+      </div>
+      <div class="p-6 bg-white rounded-lg shadow text-center">
+        <h3 class="text-xl font-semibold mb-2">Современность</h3>
+        <p>Используем только актуальные стандарты.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Gallery -->
+  <section id="gallery" class="py-20 container mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10">Галерея</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div class="bg-gray-300 h-48 rounded"></div>
+      <div class="bg-gray-300 h-48 rounded"></div>
+      <div class="bg-gray-300 h-48 rounded"></div>
+      <div class="bg-gray-300 h-48 rounded"></div>
+      <div class="bg-gray-300 h-48 rounded"></div>
+      <div class="bg-gray-300 h-48 rounded"></div>
+    </div>
+  </section>
+
+  <!-- 5. Contact -->
+  <section id="contact" class="py-20 bg-gray-900 text-white">
+    <h2 class="text-3xl font-bold text-center mb-10">Связаться с нами</h2>
+    <form class="max-w-lg mx-auto space-y-4">
+      <input type="text" class="w-full p-3 rounded text-black" placeholder="Ваше имя">
+      <input type="email" class="w-full p-3 rounded text-black" placeholder="Email">
+      <textarea class="w-full p-3 h-32 rounded text-black" placeholder="Сообщение"></textarea>
+      <button class="w-full p-3 bg-blue-600 rounded hover:bg-blue-700 transition">
+        Отправить
+      </button>
+    </form>
+  </section>
+
+</body>
+</html>
